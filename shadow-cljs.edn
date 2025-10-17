@@ -8,8 +8,7 @@
                          :dev        {:compiler-options {:external-config {:guardrails {}}}}
                          :modules    {:main {:entries [fulcro-todomvc.main]}}
                          :devtools   {;GITPOD_REPLACE
-                                      :preloads [com.fulcrologic.fulcro.inspect.preload
-                                                 com.fulcrologic.fulcro.inspect.dom-picker-preload]}}
+                                      :preloads [com.fulcrologic.devtools.chrome-preload]}}
             :coding     {:target     :browser
                          :output-dir "resources/public/js"
                          :asset-path "/js"
