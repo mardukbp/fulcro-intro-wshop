@@ -24,7 +24,7 @@ TIP: Read this rendered, for example by looking at it in the browser: https://gi
 
 #### Recommended window layout
 
-It is best to lay out your windows so that you can always see the exercises and then either the webapp or Calva (except of the last exercise, where we need both Calva and the webapp). This layout works best for me:
+It is best to lay out your windows so that you can always see the exercises and then either the webapp or Calva (except for the last exercise, where we need both Calva and the webapp). This layout works best for me:
 
 [%autowidth]
 |===
