@@ -191,7 +191,7 @@ image::./images/brwsr-fi-db-explorer.png["Fulcro Inspect - DB Explorer"]
  * Notice that you are looking at the very _same data_ that you can see in Fulcro Inspect - DB
  * Pay attention to the values of `:list/items` - it is not the attribute maps but just _idents_ of the included items
 
-LESSON: We saw how data is stored in the client DB mostly in a normalized form (`<entity name>/id -> <id value> -> <map of props, where some props contain idents, to link to other entities>`) and how idents are used to link entities together. We have experienced how Fulcro fulfills a query by "walking" the client DB. We have seen that the client DB is nothing else than a map (of maps of maps, mostly). Tip: my short screencast https://youtu.be/rzK0_k5lzg4[Fulcro explained: Turning Root query into props tree] also demonstrates how the the query and client DB work in tandem to produce props for the Root component.
+LESSON: We saw how data is stored in the client DB mostly in a normalized form (`<entity name>/id -> <id value> -> <map of props, where some props contain idents, to link to other entities>`) and how idents are used to link entities together. We have experienced how Fulcro fulfills a query by "walking" the client DB. We have seen that the client DB is nothing other than a map (of maps of maps, mostly). Tip: my short screencast https://youtu.be/rzK0_k5lzg4[Fulcro explained: Turning Root query into props tree] also demonstrates how the the query and client DB work in tandem to produce props for the Root component.
 
 LESSON 2: Normalized data cache means it is easy to find any piece of data & a change will affect all places that use it.
 
