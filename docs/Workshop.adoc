@@ -89,7 +89,7 @@ image::./images/brwsr-fi-element.png["Fulcro Inspect - Element"]
 
 1. Open now the **Fulcro Inspect** tab and its **Element** sub-tab.
 2. Click _Pick Element_ in the top left corner and then click "Item 1" in the webapp
-  * Beware: The element tab is showing a _snapshot_ of the Fulcro component data how it was at the time when you picked it
+  * Beware: The Element tab is showing a _snapshot_ of the Fulcro component's data as it was at the time when you picked it
 3. You should now see the details of the TodoItem, including
   * its "_ident_", meaning "identifier", namely `[:item/id 1]`
   * its _props_, including `:item/complete` and `:item/label`
