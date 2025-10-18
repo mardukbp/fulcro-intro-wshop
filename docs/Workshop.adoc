@@ -285,7 +285,7 @@ Note: The `todo-check` call simply returns the whole expression as-is (otherwise
 
 LESSON: A mutation is data that can have a handler associated on the frontend and the backend. The frontend handler action updates the Client DB and the mutation is then sent asynchronously to the backend as an EQL transaction iff it is marked as remote. The backend handler gets the same parameters (plus the general pathom environment) and typically updates a data store and possibly returns data.
 
-LESSON 2: Navigability - you can click through to the mutation code for where you "transact" it. Locality - the frontend and backend mutation code can be next to each other. Productivity - adding a new local/remote side-effect is one defmutation away.
+LESSON 2: Navigability - you can click through to the mutation's code from the place where you "transact" it. Locality - the code of the frontend and backend mutations can be next to each other. Productivity - adding a new local/remote side-effect is one defmutation away.
 
 #### 9. Triggering a mutation manually
 
