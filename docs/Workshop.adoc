@@ -230,7 +230,7 @@ LESSON 2: The backend exposes all the data the frontend might care about through
 
 #### 7. Loading data from the REPL
 
-In the previous exercise we have observed the _effect_ of the application loading its data. Now we will trigger the load ourselves from the code, in the same manner that the application https://github.com/holyjak/fulcro-intro-wshop/blob/6a06c8881696ff2225be3502d79f0289054fb741/src/fulcro_todomvc/main.cljs#L13[does in its startup code].
+In the previous exercise we have observed the _effect_ of the application loading its data. Now we will trigger the LOAD ourselves from the code, in the same manner that the application https://github.com/holyjak/fulcro-intro-wshop/blob/6a06c8881696ff2225be3502d79f0289054fb741/src/fulcro_todomvc/main.cljs#L13[does it in its startup code].
 
 1. Go to `ui.cljs` and evaluate the `df/load!` form marked _Exercise 7.1_ +
    (Note: df/load! is just a helper function that eventually transacts a Fulcro mutation (the Fulcro and Pathom concept of a mutation diverge slightly and not all F. mutations are P. mutations but let's ignore that for now))
