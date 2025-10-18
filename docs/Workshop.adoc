@@ -260,7 +260,7 @@ That is only possible because both `TodoList` and `TodoItem` declare their `:ide
   ...)
 ```
 
-LESSON: Load targets a backend resolver by asking for a data that it can provide and supplying the inputs that it requires. It includes a component's query to request a particular subset of the available data and uses the component's (and children's) ident to normalize the data into the Client DB. Normalized data ensure that a change affects all relevant places.
+LESSON: `load!` targets a backend resolver by asking for data that it can provide and supplying the inputs that it requires. It includes a component's query to request a particular subset of the available data and uses the component's (and children's) ident to normalize the data into the Client DB. Normalized data ensures that a change affects all relevant places.
 
 #### 8. Changing local and remote data with mutations
 
