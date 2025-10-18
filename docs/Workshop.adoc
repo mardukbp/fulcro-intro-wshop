@@ -313,7 +313,7 @@ LESSON: Mutations can be local-only or both local and remote. You can use the DB
 6. Client DB is primarily a map of maps of maps (table -> <id> -> props) and the data is stored mostly in a normalized form, with each entity in its own table and referenced via its ident, instead of being nested in its parent
 7. All changes pass through the (asynchronous) transaction subsystem
 8. Data can be loaded via `df/load!`, which leverages a component and its query
-9. Changes are performed by transacting a mutation, which is just a list of a symbol and parameters - and it may have associated frontend and possibly backend "handlers" via the `defmutation` macros
+9. Changes are performed by transacting a mutation, which is just a list consisting of a symbol and parameters - and it may have associated frontend and possibly backend "handlers" via the `defmutation` macros
 10. Mutations can be frontend-only or both frontend and backend, with the frontend action performed first
 11. There is superb tooling in Fulcro Inspect and Shadow Inspect
 12. Fulcro is REPL-friendly - almost everything can be done from the REPL
