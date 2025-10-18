@@ -356,7 +356,7 @@ TIP: If you run into trouble then check the <<Help>> section below
 
 #### Troubleshooting and getting help during the exercises
 
-Use repeatedly `(hint <exercise number>)` (as long as there are any more hints for the exercise) to get useful tips when you get stuck.
+Use repeatedly `(hint <exercise number>)` (as long as there are any hints left for the exercise) to get useful tips when you get stuck.
 
 Leverage the https://blog.jakubholy.net/2020/troubleshooting-fulcro/[Fulcro Troubleshooting Decision Tree] to help you troubleshoot your problems.
 
