@@ -206,7 +206,7 @@ Remember that any "request for a change" passes through the "asynchronous" trans
 
 1. Make sure _Fulcro Inspect_ is open and reload the page
 2. In Fulcro Inspect, open the _Transactions_ tab. You should see a single transaction^1^ there, a [.underline]#LOAD#, and its EQL query. Explore the query. +
-*^1^) Tip*: If you do not see the transaction then try to hard-reload the browser tab. (This happens if you opened Fulcro Inspect after the data has already been loaded.)
+*^1^) Tip*: If you do not see the transaction then reload the browser tab. (This happens if you opened Fulcro Inspect after the data has already been loaded.)
  * How does the LOAD query differ from Root query? Are they same? No? Why?
  * _Transactions_ shows side-effects executed in the frontend, i.e. data loads and other Fulcro mutations
 3. Click on the transaction to see its details. Notice that the transaction is simply data, of the form `(<fully qualified symbol> {options...})`. Let's explore the details of its query. +
