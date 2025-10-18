@@ -339,7 +339,7 @@ The exercises rely on some knowledge that the workshop does not provide so read 
 It is advisable that you skim through the https://fulcro-community.github.io/guides/tutorial-minimalist-fulcro/[whole tutorial] to get an idea what is there, and where.
 ====
 
-TIP: If you run into troubles then check the <<Help>> section below
+TIP: If you run into trouble then check the <<Help>> section below
 
 ### Setup
 
