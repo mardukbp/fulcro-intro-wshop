@@ -264,7 +264,7 @@ LESSON: `load!` targets a backend resolver by asking for data that it can provid
 
 #### 8. Changing local and remote data with mutations
 
-To change state either in the frontend or in the backend, you "transact" (submit to the transaction subsystem) a mutation. A mutation is just data, namely a list of `(<namespaced symbol> {<parameter key-value pairs>})`. You can register a "handler" for that symbol both on the frontend and backend using the Fulcro/Pathom `defmutation` macros. Let's trigger a mutation and explore it.
+To change state either in the frontend or in the backend, you "transact" (submit to the transaction subsystem) a mutation. A mutation is just data, namely a list of `(<namespaced symbol> {<parameter key-value pairs>})`. You can register a "handler" for that symbol both on the frontend and the backend using the Fulcro/Pathom `defmutation` macros. Let's trigger a mutation and explore it.
 
 1. Mark "Item 3" as complete by clicking to the left of it. This essentially triggers this DOM event handler (simplified):
 +
