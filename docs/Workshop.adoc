@@ -158,7 +158,7 @@ image::./images/fulcro-ui-query-data.svg["Query composition"]
 Let's have a look at the query and how it is turned into a props tree.
 
 1. Open `src/fulcro_todomvc/ui.cljs`, scroll to the bottom and inside the `(comment ...)` evaluate the `get-query Root` form marked _Exercise 4.1_
-2. It is little long and hard to read so open the http://localhost:9630/inspect-latest[Shadow-cljs Inspect Latest] in a new tab of the same browser and then evaluate the `(tap> ...)` form marked _Exercise 4.2_. The value should appear in the Shadow Inspect; at the very bottom, **click _Pretty-Print_**
+2. It is a bit long and hard to read so open http://localhost:9630/inspect-latest[Shadow-cljs Inspect Latest] in a new tab of the same browser and then evaluate the `(tap> ...)` form marked _Exercise 4.2_. The value should appear in the Shadow Inspect; at the very bottom, **click _Pretty-Print_**
 3. Now let's see how Fulcro fulfills that query from the client DB, using `fdn/db->tree` - evaluate the form marked _Exercise 4.3_ and observe the result in Shadow's Inspect Latest. First use _Pretty-Print_ on it then switch to _Browse_ - you can click on any line to "drill in" and you can use the `<` and `<<` to go (all the way) back
 
 LESSON: The Root query is turned to a props tree using the client DB. Shadow Inspect is a fine tool for looking at complex data.
