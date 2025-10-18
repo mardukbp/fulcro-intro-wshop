@@ -204,7 +204,7 @@ image::images/fulcro-system-view.svg["Fulcro overview",400]
 
 Remember that any "request for a change" passes through the "asynchronous" transaction subsystem (marked _Tx_) and that this includes both queries - i.e. data loads - and mutations. Notice also that EQL queries are used both for getting the props tree from the Client DB (not shown in the figure) and for loading data from the backend into the Client DB. Let's see how the loading looks in practice.
 
-1. Make sure _Fulcro Inspect_ is opened and reload the page
+1. Make sure _Fulcro Inspect_ is open and reload the page
 2. In Fulcro Inspect, open the _Transactions_ tab. You should see a single transaction^1^ there, a [.underline]#LOAD#, and its EQL query. Explore the query. +
 *^1^) Tip*: If you do not see the transaction then try to hard-reload the browser tab. (This happens if you opened Fulcro Inspect after the data has already been loaded.)
  * How does the LOAD query differ from Root query? Are they same? No? Why?
