@@ -197,7 +197,7 @@ LESSON 2: Normalized data cache means it is easy to find any piece of data & a c
 
 #### 6. Loading data from the server
 
-Where does the current-list list data come from? From the server, as we will see. But first, let's review what the frontend part of a Fulcro application looks like:
+Where does the current-list's list data come from? From the server, as we will see. But first, let's review what the frontend part of a Fulcro application looks like:
 
 .Fulcro overview
 image::images/fulcro-system-view.svg["Fulcro overview",400]
