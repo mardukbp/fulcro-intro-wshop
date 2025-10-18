@@ -226,7 +226,7 @@ Remember that any "request for a change" passes through the "asynchronous" trans
 
 LESSON: EQL queries are used both to turn data from the Client DB into a props tree and to load data from the backend into the Client DB. All changes in the application, including loading data, pass through the transaction subsystem and thus show up in the _Transactions_ view of Fulcro Inspect. You have further used the _Network_ tab to see both the LOAD request and response. Finally, you have used the _EQL_ tab to experiment with crafting different queries that the server could resolve.
 
-LESSON 2: The backend exposes all data frontend might care about through a single endpoint and the frontend asks for whatever subset of it that it wants. To expose a new piece of data just write a backend function that returns it and add it to the frontend query.
+LESSON 2: The backend exposes all the data the frontend might care about through a single endpoint and the frontend asks for whatever subset of it that it wants. To expose a new piece of data just write a backend function that returns it and add it to the frontend query.
 
 #### 7. Loading data from the REPL
 
