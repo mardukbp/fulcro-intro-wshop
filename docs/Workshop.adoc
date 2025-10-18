@@ -54,7 +54,7 @@ Take good time to read and understand the data / code you are looking at.
 2. Explore the tree of the components displayed
 3. Select one of the `TodoItem` elements - can you see its props on the right side (or at the bottom, on a smaller screen)? (Answer: yes and no :-))
 
-We see that the components are nested in each other, creating a tree (with a single "branch" in this case):
+We see that the components are nested into each other, creating a tree (with a single "branch" in this case):
 
 .UI components tree
 image::images/ui-tree.svg["UI tree",200,200]
