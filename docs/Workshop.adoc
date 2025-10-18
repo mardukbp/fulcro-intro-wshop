@@ -112,7 +112,7 @@ image::./images/brwsr-shadow-inspect.png["Shadow Inspect"]
 +
 NOTE: The evaluation result is displayed both inline and inside the `output.calva-repl` file (_Go - Go to File..._ to reopen it)
 
-2. Now let's look at what the props look like - at the same place, under _Exercise 3.2_, eval the `(-> ... (comp/props) ..))` form (put your cursor on it and `Alt - Enter`).
+2. Now let's look at what the props look like - at the same place, under _Exercise 3.2_, eval the `(-> ... (comp/props) ..)` form (put your cursor on it and press `Alt-Enter`).
  * _Note_: We used `tap>` so the data will not show up in the REPL but in a tap client. So:
   . open the http://localhost:9630/inspect-latest[Shadow-cljs Inspect Latest] in a new tab of the same browser window where the webapp is (_Gitpod: Duplicate the webapp tab and replace 8181 in the url with 9630 to access Shadow Inspect._)
     ** if this displays an empty window, go to http://localhost:9630/ and click the _Inspect Latest_ tab there
