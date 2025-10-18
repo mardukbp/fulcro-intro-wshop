@@ -243,7 +243,7 @@ In the previous exercise we have observed the _effect_ of the application loadin
  * Notice the shape of the response - it is a tree
 3. Go to _Fulcro Inspect - DB_ and expand `:list/id` to verify that the list `2` has been added there. Then expand `:item/id` to verify that the item `99` has also been added and item `1` updated
  * Notice the shape of the data in the client DB: is it exactly the same as the response (a single tree) or not?
- * not - Fulcro has placed each _data entity_ into its own "table", i.e. the list into `:list/id` and the item into `:item/id`, and the list _links_ to the item using its ident instead of containing it. I.e. Fulcro has https://rdbms.ca/database/normalization.html[_normalized_] the incoming data tree into the Client DB's "entity tables":
+ * It is not - Fulcro has placed each _data entity_ into its own "table", i.e. the list into `:list/id` and the item into `:item/id`, and the list _links_ to the item using its ident instead of containing it. I.e. Fulcro has https://rdbms.ca/database/normalization.html[_normalized_] the incoming data tree into the Client DB's "entity tables":
 +
 image::./images/brwsr-fi-db+norm.png["Fulcro Inspect - DB and normalized data"]
 +
