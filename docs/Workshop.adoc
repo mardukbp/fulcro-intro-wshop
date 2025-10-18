@@ -4,7 +4,7 @@ By now, the https://github.com/holyjak/fulcro-intro-wshop/blob/main/docs/INTRO.m
 
 ## Battle plan
 
-1. DIY _app exercises_ 1 - 9 (stop latest 10 min before the workshop's end)
+1. DIY _app exercises_ 1 - 9 (stop at the latest 10 min before the workshop's end)
 2. Review <<Summary - lessons learned>>
 3. Q&A
 4. _Coding exercises_ - if time permits or do them at home after the workshop
