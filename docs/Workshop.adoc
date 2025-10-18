@@ -163,7 +163,7 @@ Let's have a look at the query and how it is turned into a props tree.
 
 LESSON: The Root query is turned into a props tree using the client DB. Shadow Inspect is a fine tool for looking at complex data.
 
-LESSON 2: The simplicity of the functional design where UI represented by Root is a "pure" function of data. Data in the UI only comes from what you give to the Root => easy to inspect, easy to understand. No messy side-band data retrieval by components.
+LESSON 2: The simplicity of the functional design where UI, represented by Root, is a "pure" function of data. Data in the UI only comes from what you give to the Root => easy to inspect, easy to understand. No messy side-band data retrieval by components.
 
 #### 5. Exploring the client DB
 
