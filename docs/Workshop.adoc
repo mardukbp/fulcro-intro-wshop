@@ -161,7 +161,7 @@ Let's have a look at the query and how it is turned into a props tree.
 2. It is a bit long and hard to read so open http://localhost:9630/inspect-latest[Shadow-cljs Inspect Latest] in a new tab of the same browser and then evaluate the `(tap> ...)` form marked _Exercise 4.2_. The value should appear in the Shadow Inspect; at the very bottom, **click _Pretty-Print_**
 3. Now let's see how Fulcro fulfills that query from the client DB, using `fdn/db->tree` - evaluate the form marked _Exercise 4.3_ and observe the result in Shadow's Inspect Latest. First use _Pretty-Print_ on it then switch to _Browse_ - you can click on any line to "drill down" and you can use the buttons `<` and `<<` to go (all the way) back
 
-LESSON: The Root query is turned to a props tree using the client DB. Shadow Inspect is a fine tool for looking at complex data.
+LESSON: The Root query is turned into a props tree using the client DB. Shadow Inspect is a fine tool for looking at complex data.
 
 LESSON 2: The simplicity of the functional design where UI represented by Root is a "pure" function of data. Data in the UI only comes from what you give to the Root => easy to inspect, easy to understand. No messy side-band data retrieval by components.
 
