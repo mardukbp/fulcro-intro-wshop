@@ -241,7 +241,7 @@ In the previous exercise we have observed the _effect_ of the application loadin
 2. Check that you can see the transaction in the _Transactions_ tab of Fulcro Inspect and explore the request and response in its _Network_ tab.
  * Notice that the ident and the query of the component that you supplied to `df/load!` have been combined into a join query - which the backend can resolve because it https://github.com/holyjak/fulcro-intro-wshop/blob/6a06c8881696ff2225be3502d79f0289054fb741/src/fulcro_todomvc/server.clj#L111[has the `list-resolver`] that takes a `:list/id` and returns its data
  * Notice the shape of the response - it is a tree
-3. Go to _Fulcro Inspect - DB_ and expand `:list/id` to verify the list `2` has been added there. Then expand `:item/id` to verify that the item `99` has also been added and item `1` updated
+3. Go to _Fulcro Inspect - DB_ and expand `:list/id` to verify that the list `2` has been added there. Then expand `:item/id` to verify that the item `99` has also been added and item `1` updated
  * Notice the shape of the data in the client DB: is it exactly the same as the response (a single tree) or not?
  * not - Fulcro has placed each _data entity_ into its own "table", i.e. the list into `:list/id` and the item into `:item/id`, and the list _links_ to the item using its ident instead of containing it. I.e. Fulcro has https://rdbms.ca/database/normalization.html[_normalized_] the incoming data tree into the Client DB's "entity tables":
 +
