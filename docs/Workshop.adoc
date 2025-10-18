@@ -119,7 +119,7 @@ NOTE: The evaluation result is displayed both inline and inside the `output.calv
   . eval the form again; the value should appear in Shadow Inspect
   . **click _Pretty-Print_** at the very bottom of Inspect to make it readable
  * Compare the props and the query (and notice it is the same thing we saw in the Element tab)
- * Notice some attributes from the query are missing from the props - that's because client DB had no value for them (which is fine, since in Clojure `nil` is equivalent to `false`)
+ * Notice some attributes from the query are missing from the props - that's because the client DB had no value for them (which is fine, since in Clojure `nil` is equivalent to `false`)
 3. Modify the Exercise 3.2 code to get the props of `TodoList`; for that you will need its ident - remember you can find it using the Fulcro Inspect - Element tab
 4. Modify also the Exercise 3.1 code to get the query of `TodoList`, then:
 +
