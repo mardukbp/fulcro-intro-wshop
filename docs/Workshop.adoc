@@ -214,7 +214,7 @@ Remember that any "request for a change" passes through the "asynchronous" trans
 4. Open Fulcro Inspect's _Network_ tab (not the browser's!). You should see a single _Request_ with the LOAD's query. Click it to see its details and the _Response_ and notice how the response data tree mirrors the EQL query.
 5. Now click the _[Send to query]_ button next to the Request in the details, which will send you to the _EQL_ tab. Once there, press also the _[(Re)load Pathom Index]_ button to the very right (for autocompletion) and then the _[Run EQL]_ button next to it. Here we can play with EQL queries that the backend can answer.
 6. Play with the query. Delete some attributes (keywords), add a made-up attribute and run it again. Replace the `{:list/items ...}` join with just the plain `:list/items` attribute and re-run. (Note: The data is returned primarily by the https://github.com/holyjak/fulcro-intro-wshop/blob/6a06c8881696ff2225be3502d79f0289054fb741/src/fulcro_todomvc/server.clj#L111[`list-resolver`].)
- * As you have noticed, Pathom by default returns all attributes of a _nested entity_ if you do not declare what you want using a join
+ * As you have noticed, by default Pathom returns all attributes of a _nested entity_ if you do not declare what you want using a join
 7. Review the <<eql-primer,EQL Primer>> above
 8. Replace the whole query with the ident query `[[:item/id 1]]`. What do you get back?
  * Notice this case differs from 6. above because we do not query for an _attribute_ but for an _ident_
