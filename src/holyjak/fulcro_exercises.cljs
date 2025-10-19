@@ -23,6 +23,7 @@
     [com.fulcrologic.fulcro.algorithms.data-targeting :as targeting]
     [com.fulcrologic.fulcro.algorithms.normalized-state :as norm]
     [com.fulcrologic.fulcro.application :as app]
+    [fulcro.inspect.tool :as it]
     [com.fulcrologic.fulcro.components :as comp :refer [defsc transact!]]
     [com.fulcrologic.fulcro.data-fetch :as df]
     [com.fulcrologic.fulcro.mutations :refer [defmutation]]
@@ -176,6 +177,8 @@
       "TODO")
 
     (def app4 (config-and-render! Root4))
+
+    (it/add-fulcro-inspect! app4)
 
     ;; What do you think the client DB will look like? Think, write it down, then check it
     ;; using Fulcro Inspect - DB (or `(show-client-db)`)

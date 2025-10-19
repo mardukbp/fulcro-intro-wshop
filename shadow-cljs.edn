@@ -14,7 +14,6 @@
                          :asset-path "/js"
                          :dev        {:compiler-options {:external-config {:guardrails {}}}}
                          :modules    {:main {:init-fn holyjak.fulcro-exercises/init}}
-                         :devtools   {:preloads [com.fulcrologic.fulcro.inspect.preload
-                                                 com.fulcrologic.fulcro.inspect.dom-picker-preload]
+                         :devtools   {:preloads [com.fulcrologic.devtools.chrome-preload]
                                       :after-load holyjak.fulcro-exercises.impl/refresh}}}}
 
