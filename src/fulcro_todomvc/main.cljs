@@ -6,9 +6,11 @@
     [com.fulcrologic.fulcro.application :as app]
     [com.fulcrologic.fulcro.data-fetch :as df]
     [taoensso.timbre :as log]
+    [fulcro.inspect.tool :as it]
     [fulcro-todomvc.app :refer [app]]))
 
 (defn ^:export start []
+  (it/add-fulcro-inspect! app)
   (app/mount! app ui/Root "app")
   (df/load! app [:list/id 1] ui/TodoList
     {:target [:root/current-list]})
