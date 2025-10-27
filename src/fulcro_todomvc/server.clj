@@ -29,12 +29,18 @@
                        :item/label    "Item 3"
                        :item/complete false}}))
 
+(def counter (atom 3))
+
+(defn next-id []
+  (swap! counter inc)
+  @counter)
+
 (pc/defmutation todo-new-item [env {:keys [id list-id text]}]
   {::pc/sym    `fulcro-todomvc.api/todo-new-item
    ::pc/params [:list-id :id :text]
    ::pc/output [:item/id]}
   (log/info "New item on server")
-  (let [new-id (tempid/uuid)]
+  (let [new-id (next-id)]
     (swap! item-db assoc new-id {:item/id new-id :item/label text :item/complete false})
     {:tempids {id new-id}
      :item/id new-id}))
