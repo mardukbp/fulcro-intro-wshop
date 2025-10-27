@@ -127,8 +127,8 @@
         (swap! state dissoc :root/desired-filter)))))
 
 (defmutation todo-filter
-  "Change the filter on the active list (the one pointed to by top-level :todos). If there isn't one, stash
-  it in :root/desired-filter."
+  "Change the filter on the active list (the one pointed to by top-level :root/current-list).
+  If there isn't one, stash it in :root/desired-filter."
   [{:keys [filter]}]
   (action [{:keys [state]}]
     (let [list-id (current-list-id @state)]
