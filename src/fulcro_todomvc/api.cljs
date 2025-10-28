@@ -113,7 +113,9 @@
         (fn [todos] (vec (remove (fn [ident] (is-complete? ident)) todos))))))
   (remote [_] true))
 
-(defn current-list-id [state] (get-in state [:application :root :todos 1]))
+(defn current-list-id [state]
+  (let [[_ id] (:root/current-list state)]
+    id))
 
 (defmutation set-desired-filter
   "Check to see if there was a desired filter. If so, put it on the now-active list and remove the desire. This is
@@ -127,8 +129,8 @@
         (swap! state dissoc :root/desired-filter)))))
 
 (defmutation todo-filter
-  "Change the filter on the active list (the one pointed to by top-level :todos). If there isn't one, stash
-  it in :root/desired-filter."
+  "Change the filter on the active list (the one pointed to by top-level :root/current-list).
+  If there isn't one, stash it in :root/desired-filter."
   [{:keys [filter]}]
   (action [{:keys [state]}]
     (let [list-id (current-list-id @state)]
