@@ -74,7 +74,7 @@ To make everyone's lives simpler, it is _recommended_ that you use VS Code with 
 
 (You can use your editor if you really prefer that but you are on your own if you run into any problems with that.)
 
-Provided that you have Calva installed, you are ready to go. Read "Starting the app below".
+Provided that you have Calva installed, you are ready to go. Read "Starting the app from VS Code" below.
 
 #### Alternative 2: Using an in-browser VS Code and backend via Gitpod
 
