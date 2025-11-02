@@ -19,15 +19,18 @@
                                 [#{"com.fulcrologic.fulcro.*"} :debug]
                                 [#{"*"} :info]]})
 
-(def item-db (atom {1 {:item/id       1
-                       :item/label    "Item 1"
-                       :item/complete false}
-                    2 {:item/id       2
-                       :item/label    "Item 2"
-                       :item/complete false}
-                    3 {:item/id       3
-                       :item/label    "Item 3"
-                       :item/complete false}}))
+(def item-db (atom {(tempid/uuid 1)
+                    {:item/id       (tempid/uuid 1)
+                     :item/label    "Item 1"
+                     :item/complete false}
+                    (tempid/uuid 2)
+                    {:item/id       (tempid/uuid 2)
+                     :item/label    "Item 2"
+                     :item/complete false}
+                    (tempid/uuid 3)
+                    {:item/id       (tempid/uuid 3)
+                     :item/label    "Item 3"
+                     :item/complete false}}))
 
 (pc/defmutation todo-new-item [env {:keys [id list-id text]}]
   {::pc/sym    `fulcro-todomvc.api/todo-new-item
